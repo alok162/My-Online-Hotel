@@ -5,7 +5,7 @@ import axios from 'axios';
 import './animate.css';
 import './style.css';
 import './styles/foundation.min.css';
-import Header from './components/Header/Header';
+import HeroHeader from './components/Header/Header';
 import MobileHeader from './components/MobileHeader/MobileHeader';
 import Footer from './components/Footer/footer';
 
@@ -21,7 +21,7 @@ class App extends Component {
 
         <div class="off-canvas-content" data-off-canvas-content>
           <MobileHeader/>
-          <Header/>
+          <HeroHeader/>
       
           <div class="row small-up-2 medium-up-3 large-up-4">
             <div class="column">
