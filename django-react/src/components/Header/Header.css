@@ -6,8 +6,10 @@ body {
 
 .top-container {
   background-color: #f1f1f1;
-  padding: 0px;
+  margin: 0%;
   text-align: center;
+  height: 100%;
+  width: 100%;
 }
 
 
@@ -45,10 +47,19 @@ body {
 }
 
 
-.container {
+.inline-header {
   position: relative;
 }
 
+li{
+  display: inline;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
 
 
 

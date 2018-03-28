@@ -5,11 +5,16 @@
   "proxy": "http://localhost:8000",
   "dependencies": {
     "axios": "^0.18.0",
+    "bootstrap": "^4.0.0",
     "jquery": "^3.3.1",
+    "npm": "^5.8.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
+    "react-responsive-carousel": "^3.1.33",
     "react-scripts": "1.1.1",
-    "react-sticky-header": "^0.1.9"
+    "react-sticky-header": "^0.1.9",
+    "to": "^0.2.9",
+    "update": "^0.7.4"
   },
   "scripts": {
     "start": "react-scripts start",

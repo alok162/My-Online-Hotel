@@ -34,13 +34,28 @@ class Header extends Component {
       <div>
           <div class="callout primary">
           <body>
-            <div class='container'>
+            <div class='inline-header'>
              <div class="top-container">
                <img src = {require('./header.jpg')}/>
              </div>
 
             <div class="header" id="myHeader">
-               <h2>My Header</h2>
+
+            <div class="row">
+            <div class="col-sm-3">
+               <h2>My Restro</h2>
+            </div>
+            <div class="col-sm-9">
+               <ul class="nav navbar-nav navbar-right" id="top-nav">
+                                <li><a href="#hero-area">Home</a></li>
+                                <li><a href="#about-us">about us</a></li>
+                                <li><a href="#blog">Blog</a></li>
+                                <li><a href="#price">menu</a></li>
+                                <li><a href="#subscribe">news</a></li>
+                                <li><a href="#contact-us">contacts</a></li>
+                </ul>
+            </div>
+            </div>
              </div>
              </div>
 

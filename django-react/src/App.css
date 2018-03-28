@@ -26,3 +26,7 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.row small-up-2 medium-up-3 large-up-4 {
+   margin-left: 34px;
+}
