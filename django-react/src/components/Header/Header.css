@@ -1,4 +1,4 @@
-
+/* 
 body {
   margin: 0;
   font-family: Arial;
@@ -189,3 +189,39 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
   background: #FF5333;
 }
  */ 
+ 
+
+
+
+
+
+
+
+/* 
+ h5 {
+  display: inline-block;
+  padding: 10px;
+  background: #B9121B;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.p {
+  text-align: center;
+  padding-top: 40px;
+  font-size: 13px;
+} */
+.callout primary {
+  position: absolute;
+}
+
+.buttonLeftIcon {
+   position: absolute;
+   margin-top: -250px;
+   margin-left: 10px;
+}
+.buttonRightIcon {
+  position: absolute;
+  margin-top: -250px;
+  margin-left: 1190px;
+}

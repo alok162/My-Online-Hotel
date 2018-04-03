@@ -1,65 +1,46 @@
 import React, { Component } from 'react';
 import './Header.css';
+import ReactDOM from 'react-dom';
+import './Slider'
+
+import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
+import 'pure-react-carousel/dist/react-carousel.es.css';
+import FontAwesome from 'react-fontawesome';
+
+
 
 class Header extends Component {
-
-    constructor (...args) {
-        super(...args);
-        this.state = { height: undefined }
-        this._containerDOM = null;
-        this._scrollPosition = 0;
-        this.onScroll = this.onScroll.bind(this);
+    constructor(props, context) {
+        super(props, context);
+    
+        // this.handleSelect = this.handleSelect.bind(this);
+    
+        this.state = {
+          index: 0,
+          direction: null
+        };
       }
-      
-      componentDidMount () {
-        window.addEventListener('scroll', this.onScroll)
-      }
-      
-      onScroll () {
-        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-        var header = document.getElementById("myHeader");
-        // var sticky = header.offsetTop;
-          if (window.pageYOffset >= 470) {
-            header.classList.add("sticky");
-          } else {
-            header.classList.remove("sticky");
-          }
-
-      }
-
-
+    
+    
   render() {
       return (
       <div>
           <div class="callout primary">
-          <body>
-            <div class='inline-header'>
-             <div class="top-container">
-               <img src = {require('./header.jpg')}/>
-             </div>
 
-            <div class="header" id="myHeader">
+    <CarouselProvider
+        naturalSlideWidth={100}
+        naturalSlideHeight={40}
+        totalSlides={2}
+      >        
+        <Slider>
+          <Slide index={0}><img src={require('../../images/593888.jpg')} /></Slide>
+          <Slide index={1}><img src={require('../../images/877414.jpg')} /></Slide>
+        </Slider>
+        {this.index}
+        <ButtonBack class='buttonLeftIcon'>Back</ButtonBack>
+        <ButtonNext class='buttonRightIcon pull-right'>Next</ButtonNext>
+      </CarouselProvider>
 
-            <div class="row">
-            <div class="col-sm-3">
-               <h2>My Restro</h2>
-            </div>
-            <div class="col-sm-9">
-               <ul class="nav navbar-nav navbar-right" id="top-nav">
-                                <li><a href="#hero-area">Home</a></li>
-                                <li><a href="#about-us">about us</a></li>
-                                <li><a href="#blog">Blog</a></li>
-                                <li><a href="#price">menu</a></li>
-                                <li><a href="#subscribe">news</a></li>
-                                <li><a href="#contact-us">contacts</a></li>
-                </ul>
-            </div>
-            </div>
-             </div>
-             </div>
-
-</body>
           </div>
     </div>
     );

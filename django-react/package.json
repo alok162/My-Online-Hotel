@@ -8,10 +8,19 @@
     "bootstrap": "^4.0.0",
     "jquery": "^3.3.1",
     "npm": "^5.8.0",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
+    "pure-react-carousel": "^1.11.1",
+    "react": "^16.3.0",
+    "react-bootstrap": "^0.32.1",
+    "react-bootstrap-carousel": "^2.3.0",
+    "react-dom": "^16.3.0",
+    "react-fontawesome": "^1.6.1",
+    "react-image-carousel": "^1.0.17",
+    "react-image-gallery": "^0.8.7",
+    "react-image-slideshow": "^1.5.4",
+    "react-portals": "^1.3.1",
     "react-responsive-carousel": "^3.1.33",
     "react-scripts": "1.1.1",
+    "react-slideshow-image": "^0.2.2",
     "react-sticky-header": "^0.1.9",
     "to": "^0.2.9",
     "update": "^0.7.4"
@@ -21,5 +30,10 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "css-loader": "^0.28.11",
+    "react-alice-carousel": "^1.9.1",
+    "style-loader": "^0.20.3"
   }
 }

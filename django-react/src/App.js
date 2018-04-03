@@ -14,8 +14,6 @@ class App extends Component {
       return (
       <div>
   
-  
-      
       <div class="off-canvas-wrapper">
         <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
 
