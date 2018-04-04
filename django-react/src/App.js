@@ -8,6 +8,7 @@ import './styles/foundation.min.css';
 import Header from './components/Header/Header';
 import MobileHeader from './components/MobileHeader/MobileHeader';
 import Footer from './components/Footer/footer';
+import Body from './components/Body/Body';
 
 class App extends Component {
   render() {
@@ -18,31 +19,9 @@ class App extends Component {
         <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
 
         <div class="off-canvas-content" data-off-canvas-content>
-          <MobileHeader/>
-          <Header/>
-      
-          <div class="row small-up-2 medium-up-3 large-up-4">
-            <div class="column">
-              <img class="thumbnail" src="http://placehold.it/550x550"/>
-              <h5>My Site</h5>
-            </div>
-            <div class="column">
-              <img class="thumbnail" src="http://placehold.it/550x550"/>
-              <h5>My Site</h5>
-            </div>
-            <div class="column">
-              <img class="thumbnail" src="http://placehold.it/550x550"/>
-              <h5>My Site</h5>
-            </div>
-            <div class="column">
-              <img class="thumbnail" src="http://placehold.it/550x550"/>
-              <h5>My Site</h5>
-            </div>
-            <div class="column">
-              <img class="thumbnail" src="http://placehold.it/550x550"/>
-              <h5>My Site</h5>
-            </div>
-          </div>
+          <MobileHeader />
+          <Header />
+          <Body />
           <hr/>
           <Footer/>
         </div>

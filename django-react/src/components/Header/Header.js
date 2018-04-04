@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './Header.css';
 import ReactDOM from 'react-dom';
-import './Slider'
 
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
@@ -38,7 +37,7 @@ class Header extends Component {
         </Slider>
         {this.index}
         <ButtonBack class='buttonLeftIcon'>Back</ButtonBack>
-        <ButtonNext class='buttonRightIcon pull-right'>Next</ButtonNext>
+        <ButtonNext class='buttonRightIcon'>Next</ButtonNext>
       </CarouselProvider>
 
           </div>
