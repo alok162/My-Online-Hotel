@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import 'font-awesome/css/font-awesome.min.css'
 import './Footer.css'
-
+import GoogleMap from './GoogleMap'
 
 class Footer extends Component {
   render() {
@@ -35,10 +35,6 @@ class Footer extends Component {
 
 
 
-
-
-
-    
             <section id="footer">
         <div class="container">
                <div class="medium-4 columns">
@@ -63,7 +59,7 @@ class Footer extends Component {
                         </div>
                     </div>
                 </div>
-                <div class="medium-5 columns">
+                <div class="medium-4 columns">
                 {/* <div class="col-md-4"> */}
                     <div class="block wow fadeInLeft"  data-wow-delay="700ms">
                         <h3>LATEST <span>BLOG POSTS</span></h3>
@@ -85,28 +81,11 @@ class Footer extends Component {
                         </div>
                     </div>
                 </div>
-                <div class="medium-3 columns">
+                <div class="medium-4 columns">
                 {/* <div class="col-md-4"> */}
                     <div class="block wow fadeInLeft"  data-wow-delay="1100ms">
-                        <div class="gallary">
-                            <h3>PHOTO <span>STREAM</span></h3>
-                            <ul>
-                                <li>
-                                    <a href="#"><img src="images/photo/photo-1.jpg" alt=""/></a>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="images/photo/photo-2.jpg" alt=""/></a>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="images/photo/photo-3.jpg" alt=""/></a>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="images/photo/photo-4.jpg" alt=""/></a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="social-media-link">
-                            <h3>Follow <span>US</span></h3>
+                    <div class="social-media-link">
+                            <h3>FOLLOW <span>US</span></h3>
                             <ul>
                             <li>
                                 <a href="#">
@@ -131,6 +110,36 @@ class Footer extends Component {
                                
                             </ul>
                         </div>
+                        <div class="gallary">
+                            <h3>PHOTO <span>STREAM</span></h3>
+                            < GoogleMap />
+                        </div>
+                        {/* <div class="social-media-link">
+                            <h3>Follow <span>US</span></h3>
+                            <ul>
+                            <li>
+                                <a href="#">
+                                        <i className="fa fa-linkedin"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i className="fa fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i className="fa fa-facebook"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i className="fa fa-dribbble"></i>
+                                    </a>
+                                </li>
+                               
+                            </ul>
+                        </div> */}
                     </div>
                 </div>
                 </div>
