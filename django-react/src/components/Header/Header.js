@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
-import FontAwesome from 'react-fontawesome';
+import 'font-awesome/css/font-awesome.min.css'
 
 
 
@@ -36,8 +36,8 @@ class Header extends Component {
           <Slide index={1}><img src={require('../../images/877414.jpg')} /></Slide>
         </Slider>
         {this.index}
-        <ButtonBack class='buttonLeftIcon'>Back</ButtonBack>
-        <ButtonNext class='buttonRightIcon'>Next</ButtonNext>
+        <ButtonBack class='buttonLeftIcon'><i className="fa fa-chevron-left"></i></ButtonBack>
+        <ButtonNext class='buttonRightIcon'><i className="fa fa-chevron-right"></i></ButtonNext>
       </CarouselProvider>
 
           </div>
