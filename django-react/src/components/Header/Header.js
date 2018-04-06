@@ -5,6 +5,7 @@ import ReactDOM from 'react-dom';
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 import 'font-awesome/css/font-awesome.min.css'
+import NavBar from './NavBar';
 
 
 
@@ -24,9 +25,15 @@ class Header extends Component {
   render() {
       return (
       <div>
-          <div class="callout primary">
+          <div className="callout primary">
+          {/* <div class="row">
+  <div class="col-sm-4">.col-sm-4</div>
+  <div class="col-sm-4">.col-sm-4</div>
+  <div class="col-sm-4">.col-sm-4</div>
+</div> */}
+          
 
-    <CarouselProvider
+    {/* <CarouselProvider
         naturalSlideWidth={100}
         naturalSlideHeight={40}
         totalSlides={2}
@@ -36,9 +43,22 @@ class Header extends Component {
           <Slide index={1}><img src={require('../../images/877414.jpg')} /></Slide>
         </Slider>
         {this.index}
-        <ButtonBack class='buttonLeftIcon'><i className="fa fa-chevron-left"></i></ButtonBack>
-        <ButtonNext class='buttonRightIcon'><i className="fa fa-chevron-right"></i></ButtonNext>
-      </CarouselProvider>
+        <ButtonBack className='buttonLeftIcon'><i classNameName="fa fa-chevron-left"></i></ButtonBack>
+        <ButtonNext className='buttonRightIcon'><i classNameName="fa fa-chevron-right"></i></ButtonNext>
+      </CarouselProvider> */}
+  <NavBar />
+
+
+
+
+
+<div className='slider'>
+  <div className='slide1'></div>
+  <div className='slide2'></div>
+  <div className='slide3'></div>
+</div>
+
+
 
           </div>
     </div>

@@ -20,7 +20,7 @@ export default class GoogleMap extends Component {
                 id="map2"
                 apiKey="AIzaSyBvRxTjtA3bAnjVtDKmp02s4u2Qh_TwT7o"
                 mapOptions= {mapOptions2}
-                style={{ width: 400, height: 350, float: "left" }}
+                style={{ width: 400, height: 330, float: "left" }}
               /> 
             </div>
           );
