@@ -5,8 +5,7 @@ import ReactDOM from 'react-dom';
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 import 'font-awesome/css/font-awesome.min.css'
-import NavBar from './NavBar';
-
+import NavBar from '../Nav-Bar/NavBar';
 
 
 class Header extends Component {
@@ -25,7 +24,7 @@ class Header extends Component {
   render() {
       return (
       <div>
-          <div className="callout primary">
+          {/* <div className="callout primary"> */}
           {/* <div class="row">
   <div class="col-sm-4">.col-sm-4</div>
   <div class="col-sm-4">.col-sm-4</div>
@@ -50,8 +49,6 @@ class Header extends Component {
 
 
 
-
-
 <div className='slider'>
   <div className='slide1'></div>
   <div className='slide2'></div>
@@ -60,7 +57,7 @@ class Header extends Component {
 
 
 
-          </div>
+          {/* </div> */}
     </div>
     );
 }

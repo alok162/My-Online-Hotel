@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './NavBar.css';
 
 
 class NavBar extends Component {
@@ -29,8 +30,8 @@ class NavBar extends Component {
             </li>
           </ul>
           <form className="form-inline my-2 my-lg-0">
-            <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"/>
-            <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          <a className="nav-link" href="#">Login <span className="sr-only">(current)</span></a>
+            {/* <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> */}
           </form>
         </div>
       </nav>
