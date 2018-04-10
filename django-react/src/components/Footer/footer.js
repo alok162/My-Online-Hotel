@@ -89,22 +89,22 @@ class Footer extends Component {
                             <ul>
                             <li>
                                 <a href="#">
-                                        <i classNameName="fa fa-linkedin"></i>
+                                        <i className="fa fa-linkedin"></i>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <i classNameName="fa fa-twitter"></i>
+                                        <i className="fa fa-twitter"></i>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <i classNameName="fa fa-facebook"></i>
+                                        <i className="fa fa-facebook"></i>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <i classNameName="fa fa-dribbble"></i>
+                                        <i className="fa fa-dribbble"></i>
                                     </a>
                                 </li>
                                

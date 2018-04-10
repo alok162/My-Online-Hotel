@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './Header.css';
 import ReactDOM from 'react-dom';
+import { Routes } from '../../routes';
 
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';

@@ -9,6 +9,8 @@ import Header from './components/Header/Header';
 import MobileHeader from './components/MobileHeader/MobileHeader';
 import Footer from './components/Footer/footer';
 import Body from './components/Body/Body';
+import { Routes } from './routes';
+
 
 class App extends Component {
   render() {
@@ -19,6 +21,7 @@ class App extends Component {
         <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
 
         <div class="off-canvas-content" data-off-canvas-content>
+        <Routes/>
           <MobileHeader />
           <Header />
           <Body />
