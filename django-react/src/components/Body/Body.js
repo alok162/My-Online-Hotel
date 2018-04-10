@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
 import './Body.css';
+import Header from '../Header/Header'
 
 
 class Body extends Component {
   render() {
       return (
+        <div>
+        <Header />
+          
         <div class="row small-up-2 medium-up-3 large-up-4">
         <div class="column">
         <div class="hovereffect">
@@ -83,7 +87,7 @@ class Body extends Component {
     </div>
           <h5>My Site</h5>
         </div>
-
+</div>
       </div>
     );
 }

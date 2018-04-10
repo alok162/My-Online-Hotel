@@ -22,9 +22,6 @@ class App extends Component {
 
         <div class="off-canvas-content" data-off-canvas-content>
         <Routes/>
-          <MobileHeader />
-          <Header />
-          <Body />
           <hr/>
           <Footer/>
         </div>
