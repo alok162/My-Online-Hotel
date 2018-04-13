@@ -129,7 +129,22 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATICFILES_DIRS = (
-    os.path.join(os.path.join(BASE_DIR, './django-react'), 'build', 'static')
+    os.path.join(os.path.join(BASE_DIR, './django-react'), 'build', 'static'),
 )
 
 STATIC_URL = '/static/'
+
+
+
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': ( 'rest_framework_simplejwt.authentication.JWTAuthentication',)
+}
+
+
+
+
+
+
+
+
