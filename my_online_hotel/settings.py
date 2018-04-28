@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 APPEND_SLASH=False
 
 
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -44,6 +45,8 @@ INSTALLED_APPS = [
     'myapp.apps.MyappConfig'
 
 ]
+
+# AUTH_USER_MODEL = 'myapp.CustomUser'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -133,9 +136,6 @@ STATICFILES_DIRS = (
 )
 
 STATIC_URL = '/static/'
-
-
-
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': ( 'rest_framework_simplejwt.authentication.JWTAuthentication',)
