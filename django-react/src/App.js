@@ -10,6 +10,7 @@ import MobileHeader from './components/MobileHeader/MobileHeader';
 import Footer from './components/Footer/footer';
 import Body from './components/Body/Body';
 import { Routes } from './routes';
+import NavBarBottom from './components/Nav-Bar-Bottom/NavBarBottom';
 
 
 class App extends Component {
@@ -24,6 +25,7 @@ class App extends Component {
         <Routes/>
           <hr/>
           <Footer/>
+          <NavBarBottom/>
         </div>
       </div>
     </div>

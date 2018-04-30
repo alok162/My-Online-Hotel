@@ -1,8 +1,12 @@
 
-row small-up-2 medium-up-3 large-up-4 {
+.top-padding {
+    margin-top: 70px;
+}
+.row small-up-2 medium-up-3 large-up-4 {
     background-image: url("header.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
+    margin-top: 50px;
 }
 
 .hovereffect {

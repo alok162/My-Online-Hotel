@@ -1,0 +1,9 @@
+.navbar-fixed-bottom {
+	/* position: fixed; */
+	width: 100%;
+	height: 100px;
+	padding-bottom: 20px;
+	margin-top: -16%;
+	background: #45B39D;
+    overflow: hidden;
+}
