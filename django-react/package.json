@@ -17,11 +17,13 @@
     "react-image-gallery": "^0.8.7",
     "react-image-slideshow": "^1.5.4",
     "react-js-google-maps": "^1.5.2",
+    "react-player-controls": "^0.5.20",
     "react-portals": "^1.3.1",
     "react-responsive-carousel": "^3.1.33",
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.1.1",
     "react-slideshow-image": "^0.2.2",
+    "react-soundplayer": "^1.0.4",
     "react-sticky-header": "^0.1.9",
     "to": "^0.2.9",
     "update": "^0.7.4"

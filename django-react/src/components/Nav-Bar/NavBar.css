@@ -20,15 +20,20 @@
 	margin-top: -5%;
 	background-color: #333;
   overflow: hidden;
-
 }
 
 .bg-light {
   background: #45B39D!important;
 }
 
-
-
+.nav-link {
+  color: #d30320;
+  font-weight: 700;
+}
+.navbar-light .navbar-brand {
+  color: #d30320;
+  font-weight: 700;
+}
 
 .container-3{
   width: 300px;

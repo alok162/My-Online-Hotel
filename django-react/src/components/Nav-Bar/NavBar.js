@@ -40,7 +40,7 @@ class NavBar extends Component {
             </li> */}
           </ul>
           <form className="form-inline my-2 my-lg-0">
-          <a className="nav-link" href="login">Login <span className="sr-only">(current)</span></a>
+          <a className="nav-link login" href="login">Login <span className="sr-only">(current)</span></a>
             {/* <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> */}
           </form>
         </div>
