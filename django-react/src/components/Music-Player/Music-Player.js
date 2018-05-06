@@ -16,27 +16,62 @@ class MusicPlayer extends Component {
         speech : ''
    }
    this.play = this.play.bind(this);
+   this.myfunc = this.myfunc.bind(this)
   //  this.recognition.onresult = this.recognition.onresult.bind(this)
 
  }
  componentDidMount() {
    console.log('hiiiiiiiiiiii')
-  var recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition || window.mozSpeechRecognition || window.msSpeechRecognition)();
-  recognition.lang = 'en-US';
-  recognition.interimResults = false;
-  recognition.maxAlternatives = 5;
-  recognition.start();
+//   var recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition || window.mozSpeechRecognition || window.msSpeechRecognition)();
+//   recognition.lang = 'en-US';
+//   // recognition.interimResults = false;
+//   recognition.start();
+
+//   recognition.maxAlternatives = 0;
+//   recognition.continuous = true;
   
-  recognition.onresult = function(event) {
-      console.log('You said: ', event.results[0][0].transcript);
-      this.setState({speech: event.results[0][0].transcript})
-      console.log('hello', this.state.speech)
-      if(this.state.speech==='play') {
-        console.log('inside if condition')
-        this.play()
-      }
- 
-  }.bind(this);
+//   recognition.onresult = function(event) {
+//       console.log('You said: ', event.results[0][0].transcript);
+//       this.setState({speech: event.results[0][0].transcript})
+//       console.log('hello', this.state.speech)
+//       if(this.state.speech==='play') {
+//         console.log('inside if condition')
+//         this.play()
+        
+//       }
+//   }.bind(this);
+//   recognition.onend = function() {
+//     recognition.start();
+// }.bind(this);
+
+
+var recognizer = new SpeechRecognition();
+
+// Start producing results before the person has finished speaking
+recognizer.interimResults = false;
+recognizer.continuous = true;
+// Set the language of the recognizer
+recognizer.lang = 'en-US';
+
+// Define a callback to process results
+recognizer.onresult = function (event) {
+  var result = event.results[event.resultIndex];
+
+  if (result.isFinal) {
+    this.setState({speech: result[0].transcript})
+    this.myfunc()
+    
+  } else {
+   console.log('Interim result', result[0].transcript);
+  }
+  console.log('final', this.state.speech)
+
+}.bind(this);
+  recognizer.onend = function() {
+    recognizer.start();
+}.bind(this);
+// Start listening...
+recognizer.start();
 
  }
     song = new Audio(require('../Nav-Bar-Bottom/Buzz.mp3'))
@@ -45,14 +80,26 @@ class MusicPlayer extends Component {
         // this.setState.isPlaying = true
         if(this.state.isPlaying) {
             this.song.pause();
-            this.setState({isPlaying: false})
+            this.setState({isPlaying: false}) 
         }
         else {
             this.setState({isPlaying: true})
             this.song.play();
             console.log(this.state.isPlaying)
         }
-      
+    }
+
+    myfunc() {
+      console.log('called my function', this.state.speech)
+      if(this.state.speech==='play' || 'play'=='play') {
+        console.log('inside play if condition',this.state.speech)
+            this.play()
+       }
+  
+   if(this.state.speech==='stop') {
+    console.log('inside if condition',this.state.speech)
+    this.play()
+  }
     }
 
   render() {
