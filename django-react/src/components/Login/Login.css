@@ -79,3 +79,17 @@
 .login-form a {
     color: #5cb85c;
 }
+
+
+
+
+
+
+
+
+.modal-container {
+    position: relative;
+  }
+  .modal-container .modal, .modal-container .modal-backdrop {
+    position: absolute;
+  }

@@ -21,28 +21,6 @@ class MusicPlayer extends Component {
 
  }
  componentDidMount() {
-   console.log('hiiiiiiiiiiii')
-//   var recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition || window.mozSpeechRecognition || window.msSpeechRecognition)();
-//   recognition.lang = 'en-US';
-//   // recognition.interimResults = false;
-//   recognition.start();
-
-//   recognition.maxAlternatives = 0;
-//   recognition.continuous = true;
-  
-//   recognition.onresult = function(event) {
-//       console.log('You said: ', event.results[0][0].transcript);
-//       this.setState({speech: event.results[0][0].transcript})
-//       console.log('hello', this.state.speech)
-//       if(this.state.speech==='play') {
-//         console.log('inside if condition')
-//         this.play()
-        
-//       }
-//   }.bind(this);
-//   recognition.onend = function() {
-//     recognition.start();
-// }.bind(this);
 
 
 var recognizer = new SpeechRecognition();
@@ -58,7 +36,7 @@ recognizer.onresult = function (event) {
   var result = event.results[event.resultIndex];
 
   if (result.isFinal) {
-    this.setState({speech: result[0].transcript})
+    this.setState({speech: result[0].transcript.trim()})
     this.myfunc()
     
   } else {
@@ -90,8 +68,8 @@ recognizer.start();
     }
 
     myfunc() {
-      console.log('called my function', this.state.speech)
-      if(this.state.speech==='play' || 'play'=='play') {
+      console.log('called my function',this.state.speech,'play',this.state.speech.length)
+      if(this.state.speech==="play" || "play".match('/'+this.state.speech+'/')) {
         console.log('inside play if condition',this.state.speech)
             this.play()
        }
