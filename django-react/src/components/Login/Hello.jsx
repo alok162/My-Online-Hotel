@@ -1,10 +1,8 @@
 
 import React, { Component } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import {
-  isSpeechRecognitionSupported,
-  SpeechRecognition
-} from 'react-native-web-speech-api';
+// import 'bootstrap/dist/css/bootstrap.min.css';
+
+
 import { Button, Modal } from 'react-bootstrap';
 
 
@@ -16,11 +14,12 @@ class Hello extends Component {
         this.handleHide = this.handleHide.bind(this);
     
         this.state = {
-          show: false
+          show: true
         };
       }
     
       handleHide() {
+          console.log('onclicked')
         this.setState({ show: false });
       }
       render() {
@@ -33,8 +32,10 @@ class Hello extends Component {
             >
               Launch contained modal
             </Button>
+            <Modal>
+            </Modal>
     
-            <Modal
+            {/* <Modal
               show={this.state.show}
               onHide={this.handleHide}
               container={this}
@@ -52,10 +53,15 @@ class Hello extends Component {
               <Modal.Footer>
                 <Button onClick={this.handleHide}>Close</Button>
               </Modal.Footer>
-            </Modal>
+            </Modal> */}
           </div>
         );
       }
     }
 
 export default Hello;
+
+
+
+
+

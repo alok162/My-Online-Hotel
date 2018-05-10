@@ -1,13 +1,7 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Switch, Router, Route } from 'react-router-dom';
-import { Redirect } from 'react-router-dom'
-import { Routes } from '../../routes';
+
 import axios from 'axios';
 import './Login.css';
-import Hello from './Hello';
-
-import { Button, Modal } from 'react-bootstrap';
-
 
 
 class Login extends Component {
@@ -44,7 +38,6 @@ class Login extends Component {
     render() {
           return (
             <div>
-      <Hello/>
   <div class="login-form">
       <form method="post">		
           <div class="text-center social-btn">
@@ -63,29 +56,8 @@ class Login extends Component {
               <button type="button" onClick={this.onClick.bind(this)} class="btn btn-success btn-lg btn-block login-btn">Sign in</button>
           </div>
       </form>
-      <div class="text-center"><span class="text-muted" >Don't have an account?</span> <a >Sign up here</a></div>
+      <div class="text-center"><span class="text-muted" >Don't have an account?</span> <a href="signup">Sign up here</a></div>
       </div>
-
-
-
-
-       {/* Data modal or popup to change the user data  */}
-       <Modal show={this.state.showModal} onHide={this.close}>
-          <Modal.Header closeButton>
-            <Modal.Title>Please Change {this.state.changeKey}</Modal.Title>
-          </Modal.Header>
-          <form onSubmit={this.handleSubmit}>
-          <Modal.Body>
-       
-          </Modal.Body>
-          <Modal.Footer>
-            <Button type="submit" class="btn btn-primary" onClick={this.close.bind(this)}>Submit</Button>
-          </Modal.Footer>
-          </form>
-        </Modal>
-   
-
-
 
 
         </div>
