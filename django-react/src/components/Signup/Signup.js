@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Redirect } from 'react-router-dom'
+import Login from '../Login/Login'
 
 import axios from 'axios';
 
@@ -56,7 +57,6 @@ class Signup extends Component {
 
 
       onClick(ev) {
-    
         let data = JSON.stringify({
                 password: this.state.password,
                 username: this.state.username,
@@ -71,8 +71,7 @@ class Signup extends Component {
        })
        .then(res => {
                console.log('signup success',res.data)
-               return <Redirect to ="/" />
-
+               this.props.history.push("/login");
 
        })   
      }

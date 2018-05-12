@@ -17,18 +17,17 @@ class App extends Component {
   render() {
       return (
       <div>
-  
-      <div class="off-canvas-wrapper">
+  {/* <Header/> */}
+      {/* <div class="off-canvas-wrapper">
         <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
 
-        <div class="off-canvas-content" data-off-canvas-content>
+        <div class="off-canvas-content" data-off-canvas-content> */}
         <Routes/>
           <hr/>
-          <Footer/>
-          <NavBarBottom/>
-        </div>
+          {/* <Footer/> */}
+        {/* </div>
       </div>
-    </div>
+    </div> */}
 
     
     </div>

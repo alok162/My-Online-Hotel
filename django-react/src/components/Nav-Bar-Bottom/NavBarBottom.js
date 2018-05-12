@@ -9,9 +9,8 @@ class NavBarBottom extends Component {
   render() {
       return (
         <nav class="navbar navbar-default navbar-fixed-bottom">
-        <MusicPlayer/>
-
-</nav>
+            <MusicPlayer/>
+       </nav>
     );
 }
 
