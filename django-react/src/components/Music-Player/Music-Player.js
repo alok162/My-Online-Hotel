@@ -55,7 +55,7 @@ recognizer.start();
     song = new Audio(require('../Nav-Bar-Bottom/Buzz.mp3'))
     
     play() {
-        // this.setState.isPlaying = true
+        // this.setState.isPlaying = truethis.state.speech==='play'this.state.speech==='play'this.state.speech==='play'this.state.speech==='play'this.state.speech==='play'this.state.speech==='play'this.state.speech==='play'this.state.speech==='play'this.state.speech==='play'this.state.speech==='play'this.state.speech==='play'this.state.speech==='play'this.state.speech==='play'this.state.speech==='play'this.state.speech==='play'this.state.speech==='play'this.state.speech==='play'this.state.speech==='play'this.state.speech==='play'this.state.speech==='play'
         if(this.state.isPlaying) {
             this.song.pause();
             this.setState({isPlaying: false}) 
@@ -82,24 +82,27 @@ recognizer.start();
 
   render() {
       return (
-  <div class="container">
-  {/* <div class="row">
-  <div class="col-md-4">.col-md-4</div>
+  // <div class="container music-container">
+  <div class="row music-player">
+  {/* <div class="col-md-4">.col-md-4</div> */}
   
-</div> */}
+{/* </div> */}
 
-    {/* <div class="col-md-3">
+    <div class="col-md-3">
       <div class="body__cover">
         <img src="http://ecx.images-amazon.com/images/I/51XSHShbPiL.jpg" alt="Album cover" />
       </div>
       </div>
+      {/* <div class="col-md-2">
       <div class="body__info">
         <div class="info__album">The Hunting Party</div>
 
         <div class="info__song">Final Masquerade</div>
 
         <div class="info__artist">Linkin Park</div>
+      </div>
       </div> */}
+      <div class="col-md-5">
       <div class="body__buttons">
         <ul class="list list--buttons">
           <li><a href="#" class="list__link"><i class="fa fa-step-backward"></i></a></li>
@@ -110,6 +113,10 @@ recognizer.start();
 
           <li><a href="#" class="list__link"><i class="fa fa-random"></i></a></li>
         </ul>
+      </div>
+      <div class="range"></div>
+
+
       </div>
 
     {/* <div class="player__footer">
@@ -123,7 +130,8 @@ recognizer.start();
         <li><a href="#" class="list__link"><i class="fa fa-ellipsis-h"></i></a></li>
       </ul>
     </div> */}
-  </div>
+    </div>
+  // </div>
 
 
     );
