@@ -18,12 +18,12 @@
 	height: 70px;
 	padding-bottom: 20px;
 	top: 0%;
-	background-color: #333;
+	/* background-color: #333; */
   overflow: hidden;
 }
 
 .bg-light {
-  background: #45B39D!important;
+  background: #b3d4fc!important;
 }
 
 .nav-link {

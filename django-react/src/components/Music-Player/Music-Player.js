@@ -114,9 +114,11 @@ recognizer.start();
           <li><a href="#" class="list__link"><i class="fa fa-random"></i></a></li>
         </ul>
       </div>
+
+
+      </div>
+      <div class="col-md-4">
       <div class="range"></div>
-
-
       </div>
 
     {/* <div class="player__footer">

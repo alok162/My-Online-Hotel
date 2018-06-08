@@ -58,8 +58,6 @@ class Login extends Component {
       </form>
       <div class="text-center"><span class="text-muted" >Don't have an account?</span> <a href="signup">Sign up here</a></div>
       </div>
-
-
         </div>
         );
       }

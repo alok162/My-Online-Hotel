@@ -13,12 +13,18 @@ from django.http import HttpResponse, JsonResponse
 from rest_framework import generics
 from django.contrib.auth.models import User
 from serializers import UsersSerializer
+from serializers import UserSignupSerializer
+
 
 
 
 class user_login(generics.ListCreateAPIView):
 	queryset = User.objects.all()
    	serializer_class = UsersSerializer
+
+class user_signup(generics.ListCreateAPIView):
+	queryset = User.objects.all()
+   	serializer_class = UserSignupSerializer
 
 
 # class user_list(generics.ListCreateAPIView):
