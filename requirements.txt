@@ -10,7 +10,7 @@ gTTS-token==1.1.1
 idna==2.6
 psycopg2==2.7.4
 PyAudio==0.2.11
-PyJWT==1.6.1
+PyJWT==2.4.0
 pymongo==3.6.1
 pyttsx==1.1
 pytz==2018.3
